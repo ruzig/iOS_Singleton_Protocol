@@ -21,6 +21,8 @@
 		17BB7ABF18DA937600514BC5 /* iOS_Singleton_ProtocolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BB7ABE18DA937600514BC5 /* iOS_Singleton_ProtocolTests.m */; };
 		17BB7ACA18DA984A00514BC5 /* OAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BB7AC918DA984A00514BC5 /* OAHomeViewController.m */; };
 		17BB7ACD18DA991B00514BC5 /* OAGalleryFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BB7ACC18DA991B00514BC5 /* OAGalleryFlowLayout.m */; };
+		17BB7AD218DA9DD200514BC5 /* OAPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BB7AD118DA9DD200514BC5 /* OAPhotoManager.m */; };
+		17BB7AD518DAA6EB00514BC5 /* OAPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BB7AD418DAA6EB00514BC5 /* OAPhotoCell.m */; };
 		294DBE636E6141D28AF5033A /* libPods-iOS_Singleton_Protocol.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CB91CBBAC54996B3FFB344 /* libPods-iOS_Singleton_Protocol.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,10 @@
 		17BB7AC918DA984A00514BC5 /* OAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHomeViewController.m; sourceTree = "<group>"; };
 		17BB7ACB18DA991B00514BC5 /* OAGalleryFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAGalleryFlowLayout.h; sourceTree = "<group>"; };
 		17BB7ACC18DA991B00514BC5 /* OAGalleryFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAGalleryFlowLayout.m; sourceTree = "<group>"; };
+		17BB7AD018DA9DD200514BC5 /* OAPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPhotoManager.h; sourceTree = "<group>"; };
+		17BB7AD118DA9DD200514BC5 /* OAPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPhotoManager.m; sourceTree = "<group>"; };
+		17BB7AD318DAA6EB00514BC5 /* OAPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPhotoCell.h; sourceTree = "<group>"; };
+		17BB7AD418DAA6EB00514BC5 /* OAPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPhotoCell.m; sourceTree = "<group>"; };
 		30CB91CBBAC54996B3FFB344 /* libPods-iOS_Singleton_Protocol.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_Singleton_Protocol.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,6 +133,10 @@
 				17BB7AC918DA984A00514BC5 /* OAHomeViewController.m */,
 				17BB7ACB18DA991B00514BC5 /* OAGalleryFlowLayout.h */,
 				17BB7ACC18DA991B00514BC5 /* OAGalleryFlowLayout.m */,
+				17BB7AD018DA9DD200514BC5 /* OAPhotoManager.h */,
+				17BB7AD118DA9DD200514BC5 /* OAPhotoManager.m */,
+				17BB7AD318DAA6EB00514BC5 /* OAPhotoCell.h */,
+				17BB7AD418DAA6EB00514BC5 /* OAPhotoCell.m */,
 			);
 			path = iOS_Singleton_Protocol;
 			sourceTree = "<group>";
@@ -292,6 +302,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				17BB7AAA18DA937600514BC5 /* OAAppDelegate.m in Sources */,
+				17BB7AD218DA9DD200514BC5 /* OAPhotoManager.m in Sources */,
+				17BB7AD518DAA6EB00514BC5 /* OAPhotoCell.m in Sources */,
 				17BB7AA618DA937600514BC5 /* main.m in Sources */,
 				17BB7ACD18DA991B00514BC5 /* OAGalleryFlowLayout.m in Sources */,
 				17BB7ACA18DA984A00514BC5 /* OAHomeViewController.m in Sources */,
