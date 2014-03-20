@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17243A9418DAC8DF006A7097 /* OAPhoto500pxClientImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 17243A9318DAC8DF006A7097 /* OAPhoto500pxClientImp.m */; };
 		17BB7A9A18DA937600514BC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BB7A9918DA937600514BC5 /* Foundation.framework */; };
 		17BB7A9C18DA937600514BC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BB7A9B18DA937600514BC5 /* CoreGraphics.framework */; };
 		17BB7A9E18DA937600514BC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BB7A9D18DA937600514BC5 /* UIKit.framework */; };
@@ -38,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		02492E4C3ADB434D9183C364 /* Pods-iOS_Singleton_Protocol.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Singleton_Protocol.xcconfig"; path = "Pods/Pods-iOS_Singleton_Protocol.xcconfig"; sourceTree = "<group>"; };
+		17243A9118DAC4C8006A7097 /* OAPhotoProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAPhotoProtocol.h; sourceTree = "<group>"; };
+		17243A9218DAC8DF006A7097 /* OAPhoto500pxClientImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPhoto500pxClientImp.h; sourceTree = "<group>"; };
+		17243A9318DAC8DF006A7097 /* OAPhoto500pxClientImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPhoto500pxClientImp.m; sourceTree = "<group>"; };
 		17BB7A9618DA937600514BC5 /* iOS_Singleton_Protocol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Singleton_Protocol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BB7A9918DA937600514BC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17BB7A9B18DA937600514BC5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,6 +94,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17243A8E18DAC45F006A7097 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				17BB7AC818DA984A00514BC5 /* OAHomeViewController.h */,
+				17BB7AC918DA984A00514BC5 /* OAHomeViewController.m */,
+				17BB7ACB18DA991B00514BC5 /* OAGalleryFlowLayout.h */,
+				17BB7ACC18DA991B00514BC5 /* OAGalleryFlowLayout.m */,
+				17BB7AD318DAA6EB00514BC5 /* OAPhotoCell.h */,
+				17BB7AD418DAA6EB00514BC5 /* OAPhotoCell.m */,
+			);
+			name = Gallery;
+			sourceTree = "<group>";
+		};
+		17243A8F18DAC474006A7097 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				17BB7AD018DA9DD200514BC5 /* OAPhotoManager.h */,
+				17BB7AD118DA9DD200514BC5 /* OAPhotoManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		17243A9018DAC48A006A7097 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				17243A9118DAC4C8006A7097 /* OAPhotoProtocol.h */,
+				17243A9218DAC8DF006A7097 /* OAPhoto500pxClientImp.h */,
+				17243A9318DAC8DF006A7097 /* OAPhoto500pxClientImp.m */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
 		17BB7A8D18DA937600514BC5 = {
 			isa = PBXGroup;
 			children = (
@@ -127,16 +163,11 @@
 			children = (
 				17BB7AA818DA937600514BC5 /* OAAppDelegate.h */,
 				17BB7AA918DA937600514BC5 /* OAAppDelegate.m */,
+				17243A8E18DAC45F006A7097 /* Gallery */,
+				17243A8F18DAC474006A7097 /* Manager */,
+				17243A9018DAC48A006A7097 /* Protocol */,
 				17BB7AAB18DA937600514BC5 /* Images.xcassets */,
 				17BB7AA018DA937600514BC5 /* Supporting Files */,
-				17BB7AC818DA984A00514BC5 /* OAHomeViewController.h */,
-				17BB7AC918DA984A00514BC5 /* OAHomeViewController.m */,
-				17BB7ACB18DA991B00514BC5 /* OAGalleryFlowLayout.h */,
-				17BB7ACC18DA991B00514BC5 /* OAGalleryFlowLayout.m */,
-				17BB7AD018DA9DD200514BC5 /* OAPhotoManager.h */,
-				17BB7AD118DA9DD200514BC5 /* OAPhotoManager.m */,
-				17BB7AD318DAA6EB00514BC5 /* OAPhotoCell.h */,
-				17BB7AD418DAA6EB00514BC5 /* OAPhotoCell.m */,
 			);
 			path = iOS_Singleton_Protocol;
 			sourceTree = "<group>";
@@ -306,6 +337,7 @@
 				17BB7AD518DAA6EB00514BC5 /* OAPhotoCell.m in Sources */,
 				17BB7AA618DA937600514BC5 /* main.m in Sources */,
 				17BB7ACD18DA991B00514BC5 /* OAGalleryFlowLayout.m in Sources */,
+				17243A9418DAC8DF006A7097 /* OAPhoto500pxClientImp.m in Sources */,
 				17BB7ACA18DA984A00514BC5 /* OAHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

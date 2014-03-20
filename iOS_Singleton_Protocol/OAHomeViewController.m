@@ -10,12 +10,15 @@
 #import "OAGalleryFlowLayout.h"
 #import "OAPhotoManager.h"
 #import "OAPhotoCell.h"
+#import "OAPhotoProtocol.h"
+#import "OAPhoto500pxClientImp.h"
 
 static NSString *const CellIdentifier = @"Cell";
 
 @interface OAHomeViewController ()
 
 @property (strong, nonatomic) NSArray *photos;
+@property (strong, nonatomic) id<OAPhotoProtocol> photo500pxClient;
 
 @end
 
@@ -28,6 +31,8 @@ static NSString *const CellIdentifier = @"Cell";
     self = [self initWithCollectionViewLayout:flowLayout];
     if (!self) return nil;
 
+    _photo500pxClient = [[OAPhoto500pxClientImp alloc] init];
+
     return self;
 }
 
@@ -39,14 +44,22 @@ static NSString *const CellIdentifier = @"Cell";
     self.title = @"Gallery";
     self.collectionView.delegate = self;
     [self.collectionView registerClass:[OAPhotoCell class] forCellWithReuseIdentifier:CellIdentifier];
-    [OAPhotoManager photoFrom500pxSuccess:^(NSArray *photos) {
+    //-----Use Singleton--------------
+//    [OAPhotoManager photoFrom500pxSuccess:^(NSArray *photos) {
+//        self.photos = photos;
+//        [self.collectionView reloadData];
+//    } failure:^(NSError *error) {
+//        NSLog(@"%@", error);
+//    }];
+
+    //------Use Protocol--------------
+    [_photo500pxClient pullPhotoSuccess:^(NSArray *photos) {
         self.photos = photos;
         [self.collectionView reloadData];
     } failure:^(NSError *error) {
         NSLog(@"%@", error);
     }];
 }
-
 
 #pragma mark - UICollectionViewDataSource Methods
 
